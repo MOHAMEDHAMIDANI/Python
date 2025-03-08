@@ -26,10 +26,8 @@ def replace(text , target  , replacement , count = -1):
     print(' '.join(words))
     if count > 0:
         print(f'we found only {oldCount - count} {target} are you sure you didn\'t miss the count ??');
-
-replace(string, 'USTHB' , '#' , 6)
-
-
+print('testing replace function')
+replace(string, 'USTHB' , '#' , 4)
 
 def replaceOnlyTheOccurrence(text , target  , replacement , occurrence = 0):
     if occurrence < 0 or occurrence > 4:
@@ -58,5 +56,5 @@ def replaceOnlyTheOccurrence(text , target  , replacement , occurrence = 0):
                 words[i] = replacement
                 break
     print(' '.join(words))
-
-replaceOnlyTheOccurrence(string, 'USTHB' , '#')
+print('testing replace only the occurrence function')
+replaceOnlyTheOccurrence(string, 'USTHB' , '#' , 4)
